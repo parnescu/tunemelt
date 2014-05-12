@@ -1,0 +1,33 @@
+@font-face { font-family: "nConsol"; src: url("../res/Inconsolata.otf"); }
+body, html, div, span, ul, li, a, h1, h2, h3 { margin:0; padding:0;}
+body, html { width:100%; height:100%; font-family: "Segoe UI", "Trebuchet MS", Arial, _sans;}
+
+ul, li { list-style-type:none;}
+img { /*width:100%; height:auto; */ max-height:5em;}
+a { text-decoration: none; display:block;}
+header { margin-bottom:1em;}
+header h1 { padding:.5em 1em; }
+section { box-sizing:border-box; -moz-box-sizing:border-box; padding:1em;}
+section h2 { font-size:1.2em;}
+
+#preloader { position: fixed; right: 1em; bottom: 2em; padding: 2em; background: rgba(0,0,0,.5); opacity:0; transition: all 1s; border-radius:.5em;}
+#preloader.active { opacity:1;}
+#articleDetails { position:static; font-family: "nConsol"; top:0; left:0; z-index:3; background:white; box-sizing:border-box; -moz-box-sizing:border-box; padding:1.5em; height:100%;} 
+#articleDetails img { margin:.7em auto; max-width:50%; display: block; max-height:none;}
+#articleDetails .summary { font-size:.8em; color:#333;}
+#articleDetails .body { font-size:1.2em; }
+#articleDetails .tags { color:#ccc; font-size:.8em; margin-top:.5em; display: block;}
+#articleDetails .tags:before { content: "TAGS: "; font-weight:bold; font-size:1em; color:#333; }
+#articleDetails .close { position:absolute; top:.5em; right:.5em;}
+
+
+ul li { clear:both; float:none;}
+ul li a { float:left; margin-right:.5em;}
+
+@media all and (max-width:640px){	
+	ul li { margin-bottom:2em;}
+	ul li h2 { font-size:.8em;}
+	ul li a { float:none; clear:both;}
+	ul li img { max-height:none; width:100%;}
+ 	ul li span { display: none}
+}
